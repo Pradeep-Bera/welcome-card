@@ -1,7 +1,16 @@
-const listName = document.querySelector('.list-name');
-const listPosition = document.querySelector('.list-position');
+const input1 = document.querySelector('.entry');
+const listItem = document.querySelector('.listcontainer');
 
-let newDiv = document.createElement('div');
-newDiv.innerHTML = "";
-newDiv.classList.add('welcome-card');
-document.container.appendChild(newDiv);
+
+function addTask() {
+    if (input1.value === "") {
+        alert('You must write something!');
+    }
+    else {
+        let li = document.createElement('li')
+        li.innerHTML = input1.value;
+        listItem.appendChild(li);
+    }
+    input1.value = '';
+}
+

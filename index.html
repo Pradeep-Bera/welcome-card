@@ -11,7 +11,7 @@
       <div class="topbar">
         <h2 class="title">Make a welcome Card for our Company Member</h2>
         <hr />
-        <div class="list-name">
+        <div class="listname">
           <input
             type="text"
             id="name"
@@ -20,22 +20,14 @@
           />
           <!-- <button class="button">add name</button> -->
         </div>
-        <div class="list-position">
-          <input
-            type="text"
-            id="position"
-            class="entry"
-            placeholder="Enter the Member Position"
-          />
-        </div>
-        <div class="submit-div">
-          <button class="submit">Submit</button>
+
+        <div class="submitdiv">
+          <button class="submit" onclick="addTask()">Submit</button>
         </div>
       </div>
-      <!-- <div class="welcome-card">
-        <h2 class="member-name">Pradeep Bera</h2>
-        <h4 class="member-position">full stack developer</h4>
-      </div> -->
+      <div>
+        <ul class="listcontainer"></ul>
+      </div>
     </div>
 
     <script src="script.js"></script>
